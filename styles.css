@@ -14,31 +14,36 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Zentriert den Inhalt im Container */
 }
 
 /* Styling für die To-Do-Liste Überschrift */
 h1 {
-    text-align: center;
     margin-bottom: 20px;
 }
 
 /* Styling für das Eingabefeld und den Button */
 #inputText {
-    width: 100%;
+    width: 100%; /* Maximiert das Input-Feld auf die Breite des Containers */
+    max-width: 100%; /* Verhindert, dass das Eingabefeld die Containerbreite überschreitet */
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
+    text-align: center; /* Zentriert den Text im Eingabefeld */
+    box-sizing: border-box; /* Verhindert, dass das Padding die Breite beeinflusst */
 }
 
 #addButton {
-    width: 100%;
-    padding: 10px;
+    width: 60%; /* Button etwas kleiner als das Input-Feld */
+    padding: 8px 15px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 14px; /* Button etwas kleiner */
+    margin-top: 10px;
 }
 
 #addButton:hover {
