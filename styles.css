@@ -1,0 +1,96 @@
+/* Grundlegendes Styling für die Seite */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container für die To-Do-Liste */
+.todo-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling für die To-Do-Liste Überschrift */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling für das Eingabefeld und den Button */
+#inputText {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#addButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addButton:hover {
+    background-color: #45a049;
+}
+
+/* Styling für die To-Do-Liste */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling für jede To-Do-Aufgabe */
+li {
+    display: flex; /* Flexbox aktivieren, um die Elemente nebeneinander anzuordnen */
+    align-items: center; /* Vertikal zentrieren */
+    justify-content: flex-start; /* Alle Elemente links ausrichten */
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+/* Checkbox Styling */
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Text Styling */
+li span {
+    flex-grow: 1;  /* Der Text nimmt den gesamten verbleibenden Platz ein */
+    margin-left: 10px;
+}
+
+/* Löschen-Button */
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Durchgestrichenes Styling für erledigte Aufgaben */
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
